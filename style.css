@@ -1,0 +1,49 @@
+.main-nav {
+    margin-top: 10px;
+    list-style: none; /*esta etiqueta permite cambiar o quitar el bullet (punto) que quedan en las lultas desordenadas (ul)*/
+    padding-left: 0; /*genera un espacio interno a la izquierda derecha arriba abajo etc*/
+    background-color: rgb(10, 10, 10);
+}
+.li__nav {
+    display: inline-block;
+}
+
+
+/*pseudoClase*/
+.li__nav a {
+    color: rgb(247, 243, 237);
+    padding: 5px;
+    border-radius: 2px;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: none
+}
+.li__nav a:hover {
+    color: rgb(238, 12, 12);
+}
+.li__nav a:active {
+    color: rgb(239, 239, 248);
+}
+
+/*PseudoElemento*/
+.li__nav a::after{
+    content: " / ";
+}
+
+/*Algunos Pseudo-classes:
+:root{}
+//representa elemento HTML, con la especificidad de clase //usado para anidar variables CSS
+:active
+//se activa al hacer clic down
+:visited
+//cambio visual cuando se visita un enlace
+:hover
+//permite cambiar el estado de un elemento cuando elmause se sobrepone sobre él
+:first-child // para afectar solo al primer hijo // se coloca en el padre (ul) para afectar a su primer hijo (li)
+:last-child // para afectar solo al ultimo hijo
+:not  //negar una codiciones (ignorar una condicion) //ejemplo .clase:not(last-child)
+//afecto a todos menos el ultimo
+:empty 
+//ayuda a detectar cuando un elemento esta vacio. //ejemplo .class:empty{background:yellow;} //resaltar
+:nth-child() 
+// tag:nth-child(2){} //afectara al segundo elemento */
